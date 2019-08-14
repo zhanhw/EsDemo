@@ -58,9 +58,23 @@ public class EsController {
 
     @DeleteMapping("/delete/{indexName}")
     public ResultTo delete(@PathVariable String indexName, @RequestParam String documentId) {
-        boolean b = elasticSearchService.deleteIndex(indexName, documentId);
+        boolean b = elasticSearchService.deleteDocument(indexName, documentId);
         ResultTo build = ResultTo.builder().build();
         build.setResult(b);
+        return build;
+    }
+
+    @GetMapping("/get/shop/{indexName}")
+    public ResultTo get(@PathVariable String indexName, @RequestParam Integer page, @RequestParam Integer pageSize) {
+        ResultTo build = ResultTo.builder().build();
+        build.setResult(elasticSearchService.documentQueryByPage(indexName, page, pageSize));
+        return build;
+    }
+
+    @GetMapping("/get/condition/{indexName}")
+    public ResultTo condition(@PathVariable String indexName, @RequestParam String fieldKey) {
+        ResultTo build = ResultTo.builder().build();
+        build.setResult(elasticSearchService.documentQueryByCondition(indexName, fieldKey));
         return build;
     }
 }
