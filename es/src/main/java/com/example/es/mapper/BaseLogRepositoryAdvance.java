@@ -1,4 +1,4 @@
-package com.example.Es.mapper;
+package com.example.es.mapper;
 
 /**
  * es dao

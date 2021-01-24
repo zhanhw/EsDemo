@@ -1,7 +1,7 @@
-package com.example.Es.service;
+package com.example.es.service;
 
-import com.example.Es.mapper.BaseLogRepository;
-import com.example.Es.model.BaseLog;
+import com.example.es.mapper.BaseLogRepository;
+import com.example.es.model.BaseLog;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

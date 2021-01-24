@@ -9,7 +9,7 @@
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * WITHOUT WARRANTIes OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
@@ -31,7 +31,7 @@ public class MavenWrapperDownloader {
      * Path to the maven-wrapper.properties file, which might contain a downloadUrl property to
      * use instead of the default one.
      */
-    private static final String MAVEN_WRAPPER_PROPERTIES_PATH =
+    private static final String MAVEN_WRAPPER_PROPERTIes_PATH =
             ".mvn/wrapper/maven-wrapper.properties";
 
     /**
@@ -52,7 +52,7 @@ public class MavenWrapperDownloader {
 
         // If the maven-wrapper.properties exists, read it and check if it contains a custom
         // wrapperUrl parameter.
-        File mavenWrapperPropertyFile = new File(baseDirectory, MAVEN_WRAPPER_PROPERTIES_PATH);
+        File mavenWrapperPropertyFile = new File(baseDirectory, MAVEN_WRAPPER_PROPERTIes_PATH);
         String url = DEFAULT_DOWNLOAD_URL;
         if(mavenWrapperPropertyFile.exists()) {
             FileInputStream mavenWrapperPropertyFileInputStream = null;
@@ -62,7 +62,7 @@ public class MavenWrapperDownloader {
                 mavenWrapperProperties.load(mavenWrapperPropertyFileInputStream);
                 url = mavenWrapperProperties.getProperty(PROPERTY_NAME_WRAPPER_URL, url);
             } catch (IOException e) {
-                System.out.println("- ERROR loading '" + MAVEN_WRAPPER_PROPERTIES_PATH + "'");
+                System.out.println("- ERROR loading '" + MAVEN_WRAPPER_PROPERTIes_PATH + "'");
             } finally {
                 try {
                     if(mavenWrapperPropertyFileInputStream != null) {

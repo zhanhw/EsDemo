@@ -1,6 +1,6 @@
-package com.example.Es.mapper;
+package com.example.es.mapper;
 
-import com.example.Es.model.BaseLog;
+import com.example.es.model.BaseLog;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 /**
